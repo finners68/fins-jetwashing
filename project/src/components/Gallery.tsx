@@ -29,8 +29,8 @@ const galleryItems: GalleryItem[] = [
     caption: 'Patio Wash',
   },
   {
-    before: '/photo_2_2026-05-17_22-24-04.jpg',
-    after: '/photo_1_2026-05-17_22-24-04.jpg',
+    before: '/Keewaydin_steps_before.jpg',
+    after: '/Keewaydin_steps_after.jpg',
     caption: 'Outdoor Steps Wash',
   }
 ];
