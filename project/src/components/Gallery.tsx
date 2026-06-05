@@ -9,7 +9,7 @@ interface GalleryItem {
 
 const galleryItems: GalleryItem[] = [
   {
-    before: '/Godrer_Coed_Garage_before.jpeg',
+    before: '/Godrer_Coed_Garage_before1.jpeg',
     after: '/Godrer_Coed_Garage_after.jpeg',
     caption: 'Driveway Wash and Re-Sand',
   },
