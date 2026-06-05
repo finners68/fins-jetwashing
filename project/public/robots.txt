@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://finsjetwashing.co.uk/sitemap.xml
