@@ -19,6 +19,11 @@ const galleryItems: GalleryItem[] = [
     caption: 'Paving De-Weed and Re-Sand',
   },
   {
+    before: '/Godrer_Coed_Yard_Before.jpg',
+    after: '/GC_Yard_After.png',
+    caption: 'Farm Yard Concrete Wash',
+  },
+  {
     before: '/photo_16_2026-05-17_22-24-04.jpg',
     after: '/photo_15_2026-05-17_22-24-04.jpg',
     caption: 'Patio Wash',
