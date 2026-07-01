@@ -1,4 +1,4 @@
-import { useState, useRef, type ChangeEvent, type FormEvent } from 'react';
+import { useState, useRef, useEffect, type ChangeEvent, type FormEvent } from 'react';
 import { Send, Upload, X, Loader2, CheckCircle } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
@@ -35,6 +35,15 @@ export default function QuoteForm() {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState('');
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (submitted) {
+      document.getElementById('quote')?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+      });
+    }
+  }, [submitted]);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -115,7 +124,10 @@ export default function QuoteForm() {
 
   if (submitted) {
     return (
-      <section id="quote" className="py-20 bg-slate-50">
+      <section
+        id="quote"
+        className="min-h-[70vh] flex items-center justify-center bg-slate-50 py-20"
+      >
         <div className="max-w-xl mx-auto px-6 text-center">
           <div className="bg-white rounded-2xl p-10 shadow-sm border border-slate-100">
             <CheckCircle className="w-16 h-16 text-emerald-500 mx-auto mb-4" />
