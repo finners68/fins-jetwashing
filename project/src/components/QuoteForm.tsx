@@ -1,3 +1,4 @@
+export default function QuoteForm() {
 const handleSubmit = async (e: FormEvent) => {
   e.preventDefault();
   setError('');
